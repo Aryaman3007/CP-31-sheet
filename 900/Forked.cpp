@@ -1,5 +1,14 @@
 /*  21UEC005_Aryaman_Singh   */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <climits>
+#include <vector>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
+#include <unordered_set>
 #define loopf for(ll i=0;i<n;i++)
 #define A ios_base::sync_with_stdio(false);
 #define R cin.tie(NULL);
@@ -18,18 +27,7 @@ int main()
     A R Y
     tcs
     {
-        //check maximum distance between 2 points and include the vec[0] and 2*(x-vec[n-1]) also
-        int n,x;
-        cin>>n>>x;
-        vector<int> vec(n);
-        for(int i=0;i<n;i++){
-            cin>>vec[i];
-        }
-        int maxDist=0;
-        for(int i=0;i<n-1;i++){
-            maxDist = max(maxDist,vec[i+1]-vec[i]);
-        }
-        cout<<max({maxDist,vec[0],2*(x-vec[n-1])})<<endl;        
+                
     }
     return 0;
 }
